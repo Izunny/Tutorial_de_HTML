@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <style>
+    h2 {
+        color: green;
+        font-family: verdana;
+      }
+    </style>
 
 <h2>Links</h2>
 <p>definicion de un link</p>
 
-<a href="https://giphy.com/gifs/leroypatterson-cat-glasses-CjmvTCZf2U3p09Cn0h">Listo</a>
+    <a href="https://giphy.com/gifs/leroypatterson-cat-glasses-CjmvTCZf2U3p09Cn0h">Listo</a>
 
+
+
+<h2>_blank</h2>
+<!-- la pagina vinculada se mostrará en la ventana actual del navegador, 
+ pero puedes cambiar esto con otro destino para el vínculo -->
+
+    <a href="https://giphy.com/gifs/leroypatterson-cat-glasses-CjmvTCZf2U3p09Cn0h" target="_blank">ir a otra pagina</a> 
+
+    <p>al usar _blank el enlace se abrirá en una nueva ventana o pestaña del navegador</p>
+
+    <a href="https://giphy.com/gifs/leroypatterson-cat-glasses-CjmvTCZf2U3p09Cn0h" target="_parent">Abre el documento en el marco principal</a> <br>
+
+    <a href="https://giphy.com/gifs/leroypatterson-cat-glasses-CjmvTCZf2U3p09Cn0h" target="_top">Abre el documento en el cuerpo completo de la ventana</a> 
+
+
+
+<h2>URL absolutas vs. URL relativas</h2>
+
+    <h2>absolutas </h2>
+    <p><a href="https://www.youtube.com/">youtube</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>relativas</h2>
+    <p><a href="html_images.asp">Imagen</a></p>
+    <p><a href="/css/default.asp">Tutorial</a></p>
+
+
+<h2>Utilizar una image </h2>
+    <!--Para usar una imagen como enlace, 
+    simplemente coloque la <img> etiqueta dentro de la <a>etiqueta  -->
+
+    <p>Hacer clic en la imagen</p>
+
+    <a href="https://www.youtube.com/"><img src="cat.jpg" alt="youtube" style="width:42px;height:42px;"></a>
+
+
+
+<h2>correo electrónico</h2>
+<!--mailto dentro del hrefatributo para crear un enlace que abra el programa de correo electrónico  -->
+    <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+    <p><a href="mailto:someone@example.com">Enviar correo</a></p>
+
+
+
+<h2>Boton </h2>
+
+    <p>aprieta el boton </p>
+    
+    <button onclick="document.location='cat.jpg'">gatito</button>
+    <button onclick="window.location.href='https://www.youtube.com/'">Ir a YouTube</button>
+    <!--se debe usar window.location.href='URL' para ir a una pagina -->
+
+
+
+<h2>Títulos de enlaces </h2>
+
+    <p>title especifica información adicional sobre un elemento </p>
+   
+    <a href="https://www.instagram.com/izunnyart/#" title="Ir instagram ">Visita izunnyart en instagram</a>
 </body>
 </html>

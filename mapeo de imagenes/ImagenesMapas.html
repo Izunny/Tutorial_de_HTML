@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Maps</h2>
+<p>clic en el animal de tu interes</p>
+
+<img src="ani.png" alt="animales" usemap="#workmap" width="400" height="200">
+
+<map name="workmap">
+  <area shape="rect" coords="0,0,130,200" alt="hipopotamo" href="hipo.html">
+  <area shape="rect" coords="130,0,250,200" alt="lechuza" href="lechuza.html">
+  <area shape="circle" coords="330,0,150" alt="tigre" href="tigre.html">
+</map>
+<!-- con el mapeo de imagenes podemos usar una imagen y crear un mapa de seleccion 
+ de esta podemos crear paginas interactivas de manera visual  -->
+
+<!--Forma="poli" este formato es mucho mas especifico, puedes crear un area mucho
+mas especifica -->
+
+<h2>poli</h2>
+
+<img src="lech.jpg" alt="lechuza" usemap="#foodmap" width="294" height="171">
+
+<map name="foodmap">
+  <area shape="poly" coords="88,38,136,30,161,44,175,112,130,141,126,170,1,170,2,114,34,57" alt="lechuza" href="lechuza.html">
+</map>
+
+<h2>js</h2>
+
+<!--tambien podemos un area de selecion con js pero 
+de esta manera tendriamos que crear una funcion -->
+
+<img src="tig.jpg" alt="tigre" usemap="#map" width="294" height="171">
+<p>clic en la cara del tigre</p>
+
+<map name="map">
+  <area shape="circle" coords="220,55,30" href="tigre.html" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("es un tigre!");
+}
+</script>
+
+
+</body>
+</html>
