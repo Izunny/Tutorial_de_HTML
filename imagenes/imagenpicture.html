@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>picture</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="gato.jpg">
+  <source media="(min-width: 465px)" srcset="cat.jpg">
+  <img src="tig.jpg" style="width:auto;">
+</picture>
+
+<p>Cambie el tamaño del navegador para ver distintas versiones
+     de la imagen que se cargan en distintos tamaños de ventana gráfica. 
+     El navegador busca el primer elemento de origen en el que la consulta
+      de medios coincide con el ancho de la ventana gráfica 
+    actual del usuario y obtiene la imagen especificada en el atributo srcset</p>
+
+<p>El elemento img es necesario como última etiqueta secundaria del bloque 
+    de declaración de imagen. El elemento img se utiliza para 
+    proporcionar compatibilidad con versiones anteriores para navegadores
+     que no admiten el elemento de imagen o si ninguna de las etiquetas 
+     de origen coincide.
+</p>
+
+</body>
+</html>

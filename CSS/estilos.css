@@ -3,7 +3,10 @@ body {
   }
   h1 {
     color: blue;
+    border: 2px solid powderblue;
+    padding: 30px;
   }
   p {
     color: green;
+    border: 2px solid powderblue;
   }
