@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.beb {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+    <div class="beb">
+        <h2>Cafe</h2>
+        <p>Bebida de granos </p>
+      </div>
+      
+      <div class="beb">
+        <h2>Te</h2>
+        <p>Bebida de hierbas</p>
+      </div>
+      
+      <div class="beb">
+        <h2>Leche</h2>
+        <p>Bebida de origen animal</p>
+      </div>
+
+    <h2> Texto importante </h2>
+
+      <head>
+        <style>
+        .note {
+          font-size: 120%;
+          color: red;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Mi encabezado <span class="note">Importante</span></h1>
+        <p>Éste es un text <span class="note">Importante</span>.</p>
+
+
+<div>
+
+    <h2>JavaScript</h2>
+    <p>Haga clic en el botón para ocultar todos los elementos</p>
+    
+    <button onclick="myFunction()">ocultar</button>
+    
+    <h2 class="beb">Cafe</h2>
+    <p>bebida de grano</p>
+    
+    <h2 class="beb">Te</h2>
+    <p>bebida de hierbas</p>
+    
+    <h2 class="beb">Leche</h2>
+    <p>bebida de origen animal</p>
+    
+    <script>
+    function myFunction() {
+      var x = document.getElementsByClassName("beb");
+      for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+    }
+    </script>
+
+
+</div>
+
+</body>
+</html>
