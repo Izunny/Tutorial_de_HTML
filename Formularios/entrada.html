@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>entrada</h1>
+
+<p>El atributo de valor especifica un valor inicial para un campo de entrada:</p>
+
+<form action="/action_page.php">
+  <label for="fname">Nombre :</label><br>
+  <input type="text" id="fname" name="fname" value="dan"><br>
+  <label for="lname">Apellido:</label><br>
+  <input type="text" id="lname" name="lname" value="dur"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!--El readonlyatributo de entrada especifica que un campo 
+de entrada es de solo lectura.-->
+
+<form action="/action_page.php">
+    <label for="fname">Nombre :</label><br>
+    <input type="text" id="fname" name="fname" value="dan" readonly><br>
+</form>
+
+<!--El disabledatributo de entrada especifica que un campo de entrada 
+debe estar deshabilitado.-->
+
+<form action="/action_page.php">
+    <label for="fname">Nombre :</label><br>
+    <input type="text" id="fname" name="fname" value="dan" disabled><br>
+</form>
+
+
+<h1>tamaño de entrada</h1>
+
+<p>El atributo de tamaño especifica el ancho (en caracteres) de un campo de entrada:</p>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50" autofocus><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!--El autofocusatributo de entrada especifica que un campo de entrada debe recibir el foco 
+  automáticamente cuando se carga la página.-->
+
+<p>El atributo maxlength especifica el número máximo de caracteres permitidos en un campo de entrada:</p>
+
+<h1>patrón</h1>
+
+<p>El atributo de patrón especifica una expresión regular con la que se compara el valor del elemento de entrada.</p>
+
+<form action="/action_page.php">
+  <label for="country_code">Código :</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>marcador</h1>
+
+<p>El atributo de marcador de posición especifica una breve sugerencia que describe el valor esperado de un campo de entrada.</p>
+
+<form action="/action_page.php">
+  <label for="phone">número de teléfon:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>requerido</h1>
+
+<p>El atributo requerido especifica que se debe completar un campo de entrada antes de enviar el formulario.</p>
+
+<form action="/action_page.php">
+  <label for="username">usuario:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

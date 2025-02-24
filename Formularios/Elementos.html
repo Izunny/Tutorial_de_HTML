@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>elementos</h2>
+
+<p>Uno de los elementos de formulario más utilizados es el input </p>
+
+<form action="/action_page.php">
+  <label for="fname">Nombre</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>select</h2>
+
+<p>El select elemento define una lista desplegable:</p>
+
+<form action="/action_page.php">
+  <label for="color">escoge un color</label>
+  <select id="color" name="color">
+    <option value="rojo">rojo</option>
+    <option value="azul">azul</option>
+    <option value="verde">verde</option>
+    <option value="negro">negro</option>
+  </select>
+  <input type="submit">
+</form>
+
+<!--Para definir una opción preseleccionada, agregue el selectedatributo a la opción:
+<option value="fiat" selected>Fiat</option>-->
+
+<h2>opciones visibles</h2>
+
+<p>Utilice el atributo de tamaño para especificar el número de valores visibles.</p>
+
+<form action="/action_page.php">
+    <label for="color">escoge un color</label>
+    <select id="color" name="color" size="3">
+      <option value="rojo">rojo</option>
+      <option value="azul">azul</option>
+      <option value="verde">verde</option>
+      <option value="negro">negro</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<!-- Utilice el multiple atributo 
+ para permitir al usuario seleccionar más de un valor:
+ <select id="cars" name="cars" size="4" multiple>
+    Mantenga presionada la tecla Ctrl (Windows) / 
+    Comando (Mac) para seleccionar varias opciones.
+ -->
+
+ <h2>Área de texto</h2>
+<p>El elemento textarea define un campo de entrada de varias líneas.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">hanna banana</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+<!--También puedes definir el tamaño del área de texto usando CSS
+style="width:200px; height:600px;
+-->
+
+<h2>boton</h2>
+
+<button type="button" onclick="alert('Hello World!')">clik</button>
+
+<h2>fieldset y legend</h2>
+
+<p>El elemento fieldset se utiliza para agrupar datos 
+    relacionados en un formulario, y el elemento legend 
+    define un título para el elemento fieldset.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalidades</legend>
+    <label for="fname">Nombre</label><br>
+    <input type="text" id="fname" name="fname" value="danny"><br>
+    <label for="lname">Apellido:</label><br>
+    <input type="text" id="lname" name="lname" value="dur"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h2>lista de datos</h2>
+
+<p>El elemento de lista de datos especifica una lista de opciones 
+    predefinidas para un elemento de entrada.</p>
+
+<form action="/action_page.php">
+  <input list="feminos" name="feminos">
+  <datalist id="feminos">
+    <option value="gato">
+    <option value="tigre">
+    <option value="leopardo">
+    <option value="leon">
+    <option value="linse">
+  </datalist>
+  <input type="submit">
+</form>
+
+<h2>output</h2>
+<p>El elemento de salida representa el resultado de un cálculo.</p>
+
+<form 
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+ 
+</form>
+
+
+</body>
+</html>

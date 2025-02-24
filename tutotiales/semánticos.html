@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .all-browsers {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    
+    .all-browsers > h1, .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    .browser {
+      background: white;
+    }
+    
+    .browser > h2, p {
+      margin: 4px;
+      font-size: 90%;
+    }
+    </style>
+</html>
+<body>
+
+<!--Ejemplos de dónde <section>se puede utilizar un elemento:
+
+Capítulos
+Introducción
+Noticias
+Información del contacto
+-->
+<section>
+  <h1>WWF</h1>
+  <p>El Fondo Mundial para la Naturaleza (WWF) es una organización internacional que trabaja en cuestiones relacionadas con la conservación, la investigación y la restauración del medio ambiente, anteriormente denominada Fondo Mundial para la Naturaleza. El WWF se fundó en 1961</p>
+</section>
+
+<section>
+  <h1>símbolo del panda</h1>
+  <p>El panda se ha convertido en el símbolo de WWF. El famoso logotipo del panda de WWF tiene su origen en un panda llamado Chi Chi que fue trasladado del Zoológico de Pekín al Zoológico de Londres el mismo año de la fundación de WWF.</p>
+</section>
+
+
+<!--El <article>elemento especifica contenido independiente y autónomo.
+
+Un artículo debe tener sentido por sí mismo y debe ser posible distribuirlo 
+independientemente del resto del sitio web.-->
+<article class="all-browsers">
+    <h1>artículo</h1>
+<article class="browser">
+  <h2>Google Chrome</h2>
+  <p>Google Chrome es un navegador web desarrollado por Google, lanzado en 2008. ¡Chrome es el navegador web más popular del mundo hoy en día!</p>
+</article>
+
+<article class="browser">
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox es un navegador web de código abierto desarrollado por Mozilla. Firefox ha sido el segundo navegador web más popular desde enero de 2018.</p>
+</article>
+
+<article class="browser">
+  <h2>Microsoft Edge</h2>
+  <p>Microsoft Edge es un navegador web desarrollado por Microsoft, lanzado en 2015. Microsoft Edge reemplazó a Internet Explorer.</p>
+</article>
+</article>
+
+
+<!--Un <header>elemento normalmente contiene:
+
+uno o más elementos de encabezado (<h1> - <h6>)
+logotipo o icono
+información de autoría-->
+<article>
+    <header>
+      <h1>que es WWF</h1>
+      <p>WWF</p>
+    </header>
+    <p>La misión de WWF es detener la degradación del medio ambiente natural de nuestro planeta y construir un futuro en el que los humanos vivan en armonía con la naturaleza.</p>
+</article>
+
+<!--Un <footer>elemento normalmente contiene:
+
+información de autoría
+información de derechos de autor
+Información del contacto
+Mapa del sitio
+volver a los enlaces superiores
+Documentos relacionados-->
+<footer>
+    <p>Creado por: Danny</p>
+    <p><a href="mailto:danniydur@gmail.com">danniydur@gmail.com</a></p>
+</footer>
+
+<!--El <nav>elemento define un conjunto de enlaces de navegación.
+
+Tenga en cuenta que NO todos los enlaces de un documento deben estar 
+dentro de un <nav>elemento. El <nav>elemento está destinado 
+    únicamente a los bloques principales de enlaces de navegación.-->
+
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+</nav>
+
+<!--El <aside>elemento define 
+    algún contenido además del contenido en el que se coloca 
+    (como una barra lateral).
+
+El <aside>contenido debe estar relacionado indirectamente 
+    con el contenido circundante.-->
+<style>
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      margin-left: 15px;
+      float: right;
+      font-style: italic;
+      background-color: lightgray;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <p>Mi familia y yo visitamos el centro Epcot este verano. El clima era agradable y Epcot era increíble. ¡Pasé un verano genial con mi familia!</p>
+    
+    <aside>
+    <p>El centro Epcot es un parque temático en Walt Disney World Resort que cuenta con atracciones emocionantes, pabellones internacionales, fuegos artificiales galardonados y eventos especiales de temporada.</p>
+    </aside>
+    
+    <p>Mi familia y yo visitamos el centro Epcot este verano. El clima era agradable y Epcot era increíble. ¡Pasé un verano genial con mi familia!</p>
+    <p>Mi familia y yo visitamos el centro Epcot este verano. El clima era agradable y Epcot era increíble. ¡Pasé un verano genial con mi familia!</p>
+    
+
+<!--Elementos HTML <figure> y <figcaption>
+La <figure>etiqueta especifica contenido autónomo, como ilustraciones, diagramas, fotografías, listados de códigos, etc.
+
+La <figcaption>etiqueta define un título para un <figure>elemento. El <figcaption>elemento puede ubicarse como el primero o el último elemento secundario de un <figure>elemento.
+
+El <img>elemento define la imagen/ilustración real. -->
+<h2>visitar</h2>
+
+<p>La atracción más famosa de Puglia son las singulares casas cónicas 
+    que se encuentran en la zona de Alberobello, declarada Patrimonio de la 
+    Humanidad por la UNESCO.</p>
+    
+<figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+</body>
+</html>
