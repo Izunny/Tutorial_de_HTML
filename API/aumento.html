@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "Has hecho clic " + localStorage.clickcount + " veces";
+  } else {
+    document.getElementById("result").innerHTML = "sin almacenamianeto web";
+  }
+}
+</script>
+</head>
+<body>
+
+<p><button onclick="clickCounter()" type="button">Click</button></p>
+<div id="result"></div>
+<p>Click para aumento </p>
+<p>Cierre la pestaña (o ventana) del navegador, vuelva a intentarlo y el contador seguirá contando (no se reiniciará).</p>
+
+<!--El sessionStorageobjeto es igual al objeto localStorage,
+ excepto que almacena los datos de una sola sesión. Los datos
+  se eliminan cuando el usuario cierra la pestaña específica del navegador.
+  
+  if (sessionStorage.clickcount) {
+  sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+} else {
+  sessionStorage.clickcount = 1;
+}
+document.getElementById("result").innerHTML = "You have clicked the button " +
+sessionStorage.clickcount + " time(s) in this session.";
+  -->
+
+</body>
+</html>
+

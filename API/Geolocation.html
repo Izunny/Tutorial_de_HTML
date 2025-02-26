@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Geolocalización</h1>
+<p>Haga clic en el botón para obtener sus coordenadas.</p>
+
+<button onclick="getLocation()">Click</button>
+
+<p id="demo"></p>
+
+<script>
+const x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "se rechazo"
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "info no disponible"
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "tiempo agotado"
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "error desconocido"
+      break;
+  }
+}
+</script>
+
+</body>
+</html>
